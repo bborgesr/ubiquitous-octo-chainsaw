@@ -2,7 +2,7 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth0",
+      "title": "Securing React Apps with Auth02",
       "slug": "react-auth0-authentication-security",
       "authorId": 1,
       "category": "JavaScript"
@@ -18,7 +18,7 @@
       "id": 3,
       "title": "Creating Reusable React Components",
       "slug": "react-creating-reusable-components",
-      "authorId": 1,
+      "authorId": 2,
       "category": "JavaScript"
     },
     {
@@ -69,38 +69,6 @@
       "slug": "web-components-shadow-dom",
       "authorId": 1,
       "category": "HTML5"
-    },
-    {
-      "id": 11,
-      "slug": "ewqdeqdwq",
-      "title": "ewqdeqdwq",
-      "authorId": 2,
-      "category": "qweewqee",
-      "createdAt": 1577097325431
-    },
-    {
-      "id": 12,
-      "slug": "wdqwd",
-      "title": "wdqwd",
-      "authorId": 2,
-      "category": "ewddwe",
-      "createdAt": 1577097529405
-    },
-    {
-      "id": 13,
-      "slug": "q",
-      "title": "q",
-      "authorId": 1,
-      "category": "sWQWQE",
-      "createdAt": 1577098255702
-    },
-    {
-      "id": 14,
-      "slug": "q2",
-      "title": "Q2",
-      "authorId": 2,
-      "category": "wrefrweter",
-      "createdAt": 1577098289576
     }
   ],
   "authors": [
