@@ -2,12 +2,14 @@
   "name": "ps-flux",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bborgesr.github.io/ubiquitous-octo-chainsaw",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "flux": "^3.1.3",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
@@ -15,6 +17,8 @@
     "react-toastify": "^5.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "run-p start:dev start:api",
     "start:dev": "cross-env REACT_APP_API_URL=http://localhost:3001 react-scripts start",
     "prestart:api": "node tools/createMockDb.js",
