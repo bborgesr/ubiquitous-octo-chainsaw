@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Prompt } from "react-router-dom";
 import CourseForm from "./CourseForm";
 import * as courseApi from "../api/courseApi";
@@ -13,6 +13,13 @@ const ManagedCoursePage = props => {
     authorId: null,
     category: ""
   });
+
+  useEffect(() => {
+    const slug = props.match.params.slug;
+    if (slug) {
+      courseApi.getCourseBySlug(slug).then(_course => setCourse(_course));
+    }
+  }, [props.match.params.slug]);
 
   function handleChange({ target }) {
     setCourse({
@@ -49,7 +56,6 @@ const ManagedCoursePage = props => {
     <>
       <h2>Manage Course</h2>
       {/* <Prompt when={true} message="Are you sure you want to leave?" /> */}
-      {props.match.params.slug}
       <CourseForm
         errors={errors}
         course={course}
