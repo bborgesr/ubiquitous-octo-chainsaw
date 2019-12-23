@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ubiquitous-octo-chainsaw/precache-manifest.e4edf308643aa211c186768131ffd09d.js"
+  "/ubiquitous-octo-chainsaw/precache-manifest.6221a0b9bd5fd947918ef3def9ff8d4b.js"
 );
 
 self.addEventListener('message', (event) => {
