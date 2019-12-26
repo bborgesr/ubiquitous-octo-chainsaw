@@ -3,6 +3,7 @@ import courseStore from "../stores/courseStore";
 import CourseList from "./CourseList";
 import { Link } from "react-router-dom";
 import { loadCourses, deleteCourse } from "../actions/courseActions";
+import Box from "@material-ui/core/Box";
 
 function CoursesPage() {
   const [courses, setCourses] = useState(courseStore.getCourses());
@@ -20,9 +21,23 @@ function CoursesPage() {
   return (
     <>
       <h2>Courses</h2>
-      <Link className="btn btn-primary" to="/course">
-        Add course
-      </Link>
+      <Box
+        style={{
+          padding: "20px 0",
+          margin: "20px 0",
+          backgroundColor: "#e9ecef"
+        }}
+      >
+        <Link
+          className="btn btn-primary"
+          to="/course"
+          style={{
+            margin: "20px"
+          }}
+        >
+          Add course
+        </Link>
+      </Box>
       <CourseList courses={courses} deleteCourse={deleteCourse} />
     </>
   );
